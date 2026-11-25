@@ -1,17 +1,11 @@
 <?php
-// ===== Ajuste estes dados antes de publicar no domínio do cliente =====
-const SAMEX_EMAIL    = 'contato@samex.com.br'; // aparece no rodapé e recebe as cotações
+// ===== Dados do site (samexexporta.com.br) =====
+const SAMEX_EMAIL    = 'samex.exportacao@gmail.com'; // aparece no rodapé e recebe as cotações
+const SAMEX_EMAIL_FROM = 'nao-responda@samexexporta.com.br'; // remetente técnico das cotações (o Reply-To é o e-mail do cliente)
 const SAMEX_WHATSAPP = '';                      // DDI + DDD + número, só dígitos. Vazio = o link do WhatsApp fica escondido
 const SAMEX_LANGS    = ['pt', 'es'];
 
-// ===== Modo demonstração (clientes.nevaex.com/samex) =====
-// true  = mostra a etiqueta "Demonstração" e envia as cotações de teste para a Nevaex, não para o cliente.
-// false = site oficial, no domínio do cliente (as cotações vão para SAMEX_EMAIL).
-const SAMEX_DEMO       = true;
-const SAMEX_EMAIL_DEMO = 'ola@nevaex.com';
-
-// Nome próprio para a sessão: vários sites PHP dividem o mesmo subdomínio
-// e, sem isso, o idioma escolhido num site vazaria para o outro.
+// Nome próprio para a sessão, para não conflitar com outros sites PHP no mesmo domínio.
 session_name('samex_sess');
 session_start();
 

@@ -28,11 +28,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $name = str_replace(["\r", "\n"], ' ', $v['name']);
         $replyTo = $v['email'];
-        // Na demonstração, o e-mail de teste vai para a Nevaex e não para o cliente
-        $destino = SAMEX_DEMO ? SAMEX_EMAIL_DEMO : SAMEX_EMAIL;
-        $prefixo = SAMEX_DEMO ? '[DEMO Samex] ' : '';
-        @mail($destino, '=?UTF-8?B?' . base64_encode("{$prefixo}Nova cotação - $name") . '?=', $body,
-            "From: " . SAMEX_EMAIL . "\r\nReply-To: $replyTo\r\nContent-Type: text/plain; charset=UTF-8");
+        // From no domínio do site: um From @gmail.com enviado por outro servidor costuma cair no spam
+        @mail(SAMEX_EMAIL, '=?UTF-8?B?' . base64_encode("Nova cotação - $name") . '?=', $body,
+            "From: Site Samex <" . SAMEX_EMAIL_FROM . ">\r\nReply-To: $replyTo\r\nContent-Type: text/plain; charset=UTF-8");
         $status = 'ok';
         $v = array_fill_keys(array_keys($v), '');
         $selected = [];

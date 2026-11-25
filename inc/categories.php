@@ -1,7 +1,7 @@
 <?php
 // slug => [emoji, chave i18n, foto]
 return [
-    'tropical'  => ['🥭', 'cat_tropical',  'banana'],
+    'tropical'  => ['🥭', 'cat_tropical',  'coco'],
     'citrus'    => ['🍊', 'cat_citrus',    'laranja'],
     'temperate' => ['🍎', 'cat_temperate', 'uva'],
     'veg'       => ['🍅', 'cat_veg',       'tomate'],

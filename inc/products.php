@@ -2,7 +2,7 @@
 // foto => [português, espanhol]
 return [
     'limao'    => ['Limão', 'Limón'],
-    'banana'   => ['Banana', 'Banana'],
+    'coco'     => ['Coco', 'Coco'],
     'pitaya'   => ['Pitaya', 'Pitahaya'],
     'aipim'    => ['Aipim (mandioca)', 'Mandioca'],
     'mamao'    => ['Mamão', 'Papaya'],

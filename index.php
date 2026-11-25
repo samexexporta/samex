@@ -15,7 +15,7 @@ $cats = require __DIR__ . '/inc/categories.php';
       </p>
     </div>
     <div class="hero-art" aria-hidden="true">
-      <?php foreach (['banana', 'laranja', 'pitaya', 'tomate', 'uva', 'mamao'] as $p): ?>
+      <?php foreach (['coco', 'laranja', 'pitaya', 'tomate', 'uva', 'mamao'] as $p): ?>
         <img src="images/produtos/<?= $p ?>.jpg" alt="">
       <?php endforeach; ?>
     </div>

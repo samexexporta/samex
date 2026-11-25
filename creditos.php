@@ -5,9 +5,9 @@ require __DIR__ . '/inc/header.php';
 // arquivo => [autor, licença]
 $credits = [
     'limao'    => ['André Karwath aka Aka', 'CC BY-SA 2.5', 'Lemon.jpg'],
-    'banana'   => ['Wilfredor', 'CC0', 'Bunch of bananas on sale.jpg'],
+    'coco'     => ['Ivar Leidus', 'CC BY-SA 4.0', 'Coconuts - single and cracked open.jpg'],
     'pitaya'   => ['Webysther Nunes', 'CC BY-SA 4.0', 'Webysther 20150409032418 - Pitaya.jpg'],
-    'aipim'    => ['Denis kasozi', 'CC BY-SA 4.0', 'Harvested cassava roots 06.jpg'],
+    'aipim'    => ['David Monniaux', 'CC BY-SA 3.0', 'Manihot esculenta dsc07325.jpg'],
     'mamao'    => ['Ivar Leidus', 'CC BY-SA 4.0', 'Papaya - longitudinal section.jpg'],
     'gengibre' => ['Friday musa', 'CC BY-SA 4.0', 'Fresh ginger rhizome 01.jpg'],
     'laranja'  => ['ArildV', 'CC BY-SA 4.0', 'Navelina oranges.jpg'],

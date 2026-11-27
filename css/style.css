@@ -91,7 +91,14 @@ fieldset{border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem}
 .foot{display:grid;grid-template-columns:auto 1fr auto;gap:1.5rem;align-items:center}
 .foot img{height:56px;mix-blend-mode:multiply}
 
+.cookie-bar{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);box-shadow:0 -4px 14px rgba(31,66,102,.12);padding:1rem 0;z-index:20}
+.cookie-bar[hidden]{display:none}
+.cookie-in{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.cookie-in p{margin:0}
+.cookie-actions{display:flex;gap:.5rem;flex-shrink:0}
+
 @media(max-width:800px){
+  .cookie-in{flex-direction:column;text-align:center}
   .hero-grid,.grid3,.row,.foot{grid-template-columns:1fr}
   .grid4{grid-template-columns:1fr 1fr}
   .gallery{grid-template-columns:repeat(2,1fr)}

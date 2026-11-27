@@ -113,4 +113,11 @@ return [
     // Rodapé
     'foot_tag'      => ['pt' => 'Importação e Exportação', 'es' => 'Importación y Exportación'],
     'foot_rights'   => ['pt' => 'Todos os direitos reservados.', 'es' => 'Todos los derechos reservados.'],
+
+    // Aviso de cookies
+    'ck_text'       => ['pt' => 'Usamos cookies para entender como o site é usado e melhorá-lo. Você aceita?',
+                        'es' => 'Usamos cookies para entender cómo se usa el sitio y mejorarlo. ¿Acepta?'],
+    'ck_accept'     => ['pt' => 'Aceitar', 'es' => 'Aceptar'],
+    'ck_reject'     => ['pt' => 'Recusar', 'es' => 'Rechazar'],
+    'ck_prefs'      => ['pt' => 'Preferências de cookies', 'es' => 'Preferencias de cookies'],
 ];

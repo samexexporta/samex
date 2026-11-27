@@ -17,6 +17,7 @@ $nav   = [
 <meta name="description" content="<?= e(t('hero_text')) ?>">
 <link rel="icon" href="images/logo.png">
 <link rel="stylesheet" href="css/style.css">
+<script async src="https://analytics.nevaex.com/nx.js?k=1b3705c277529e3fe3328695"></script>
 </head>
 <body>
 <header class="site-header">
